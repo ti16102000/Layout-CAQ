@@ -15,3 +15,11 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+function openTab(idTab) {
+    var i;
+    var x = document.getElementsByClassName("article-content__list");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    document.getElementById(idTab).style.display = "flex";  
+  }

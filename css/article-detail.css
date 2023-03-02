@@ -2,7 +2,7 @@ body{
     font-family: Inter;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.png);
 }
 /*header*/
 .header-container{
