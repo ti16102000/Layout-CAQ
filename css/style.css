@@ -100,7 +100,6 @@ body{
     display: flex;
 }
 .article-content__item{
-    width: 70%;
     text-decoration: none;
     margin-right: 33px;
     display: grid;
@@ -111,7 +110,7 @@ body{
 }
 .article-content__item > img{
     height: 385px;
-    width: 100%;
+    width: 269px;
 }
 .article-btn{
     width: 179px;
