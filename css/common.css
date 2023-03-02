@@ -1,0 +1,13 @@
+:root{
+    --mau-cam-chu-dao: #F27024;
+    --mau-button-login: #F1841F;
+    --font-size-tieu-chuan: 24px;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+  }
