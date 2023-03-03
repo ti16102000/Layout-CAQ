@@ -11,7 +11,7 @@ body{
 .header-container{
     width: 100%;
     height: 114px;
-    background: #2A3764;
+    background: white;
     display: flex;
     justify-content: center;
 }
@@ -19,10 +19,22 @@ body{
     position: absolute;
     top: 25px;
 }
-.header-logo > img{
+/*logo - left*/
+.header-logo-left{
+    left: 50px;
+}
+.header-logo-left > img{
+    width: 166px;
+    height: 166px;
+}
+/*logo - left*/
+
+/*logo - center*/
+.header-logo-center > img{
     width: 166px;
     height: 65px;
 }
+/*logo - center*/
 .header-login{
     position: absolute;
     right: 0;
@@ -73,7 +85,7 @@ body{
 /*Menu user*/
 .menu-user{
     display: none;
-    background-color: white;
+    background-color: var(--mau-cam-chu-dao);;
     margin-top: 10px;
     border-radius: 4px;
 }
@@ -81,7 +93,7 @@ body{
     list-style: none;
     padding: 10px;
     cursor: pointer;
-    color: var(--mau-cam-chu-dao);
+    color: #FFFFFF;
     font-weight: 500;
 }
 .userLogin-container:hover .menu-user{
@@ -95,24 +107,61 @@ body{
 #hero-carousel { 
     width: 100%; 
     height: 1033px;  
+    overflow:hidden;
   }
-  #hero-carousel > .carousel__item{
-    display: none;
-  }
-  #hero-carousel img { 
+.hero-carousel__container{
+    display: flex;
+    width:300%;
+    position:relative;
+    -webkit-animation:slide 12s ease-in-out infinite;
+    -moz-animation:slide 12s ease-in-out infinite;
+    -ms-animation:slide 12s ease-in-out infinite;
+    -o-animation:slide 12s ease-in-out infinite;
+    animation:slide 12s ease-in-out infinite;
+}
+/* .hero-carousel__container:hover {
+    animation-play-state:paused;
+    -webkit-animation-play-state:paused;
+ } */
+.hero-carousel__container img { 
     width: 100%;
     height: 1033px; 
   }
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
+.carousel__item{
+    width: 100%;
+    height: 1033px;
+    float:left;
+}
+@-webkit-keyframes slide {
+    0% {left:0;}
+    35% {left:-100%;}
+    75% {left:-200%;}
+    100% {left:0;}
+}
+@-moz-keyframes slide {
+    0% {left:0;}
+    35% {left:-100%;}
+    75% {left:-200%;}
+    100% {left:0;}
+}
+@-ms-keyframes slide {
+    0% {left:0;}
+    35% {left:-100%;}
+    75% {left:-200%;}
+    100% {left:0;}
+}
+@-o-keyframes slide {
+    0% {left:0;}
+    35% {left:-100%;}
+    75% {left:-200%;}
+    100% {left:0;}
+}
+@keyframes slide {
+    0% {left:0;}
+    35% {left:-100%;}
+    75% {left:-200%;}
+    100% {left:0;}
+}
 /*Hero carousel*/
 
 /*Article*/
