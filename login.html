@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - FPT University</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+</head>
+
+<body>
+    <div class="container-login">
+        <div class="login-title">
+            Đăng Nhập Bằng Mail FPT
+        </div>
+        <form id="form-login">
+            <span id="error-exist" class="required-field" style="margin-bottom: 10px;">Tài khoản này chưa tồn tại trong
+                hệ thống!</span>
+            <div class="form-group">
+                <label for="">Email FPT</label>
+                <input type="text" name="email" class="form-control form-control-text" value="" data-required>
+                <span class="required-field">Trường này bắt buộc nhập!</span>
+            </div>
+            <div class="form-group">
+                <label for="">Mật khẩu</label>
+                <input type="password" name="password" class="form-control form-control-text" data-required>
+                <span class="required-field">Trường này bắt buộc nhập!</span>
+            </div>
+            <div class="form-group form-group-btn-center">
+                <input type="submit" class="btn-login" value="Đăng Nhập">
+            </div>
+        </form>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

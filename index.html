@@ -2,98 +2,112 @@
 <html>
 
 <head>
-  <title>FPT University</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
-  <link rel="manifest" href="./images/site.webmanifest" />
-  <link rel="stylesheet" href="./css/common.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+    <title>FPT University</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-  <header class="header-container">
-    <div class="header-logo">
-      <img src="./images/logo.png" alt="" />
-    </div>
-    <div class="header-login">
-      <a class="btn-login" href="">Đăng Nhập</a>
-    </div>
-  </header>
-  <div class="container">
-    <section id="hero-carousel">
-      <div class="carousel__item fade">
-        <img src="./images/image3.jpg" />
-      </div>
-      <div class="carousel__item fade">
-        <img src="./images/image9.png" />
-      </div>
-      <div class="carousel__item fade">
-        <img src="./images/image8.jpg" />
-      </div>
-    </section>
-    <section class="article-module component">
-      <div class="article-tab">
-        <div class="article-tab__item" onclick="openTab('article-coming')">
-          Đang Diễn Ra
-          <div class="article-tab__border"></div>
+    <header class="header-container">
+        <div class="header-logo">
+            <img src="./images/logo.png" alt="" />
         </div>
-        <div class="article-tab__item" onclick="openTab('article-coming-soon')">
-          Sắp Diễn Ra
-          <div class="article-tab__border"></div>
+        <div class="header-login">
+            <a class="btn-login" href="login.html">Đăng Nhập</a>
+            <div class="userLogin-container">
+                <div class="userLogin-info">
+                    <img src="" alt="" class="avatar-user">
+                    <span class="name-user"></span>
+                </div>
+                <div class="menu-user">
+                    <ul>
+                        <li onclick="logoutUser()">
+                            Đăng xuất
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-      </div>
-      <div class="article-content">
-        <div id="article-coming" class="article-content__list">
-            <div class="article-content__item">
-                <img src="./images/image1.jpg" alt="">
-                <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+    </header>
+    <div class="container">
+        <section id="hero-carousel">
+            <div class="carousel__item fade">
+                <img src="./images/image3.jpg" />
             </div>
-            <div class="article-content__item">
-                <img src="./images/image2.jpg" alt="">
-                <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+            <div class="carousel__item fade">
+                <img src="./images/image9.png" />
             </div>
-            <div class="article-content__item">
-                <img src="./images/image6.jpg" alt="">
-                <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+            <div class="carousel__item fade">
+                <img src="./images/image8.jpg" />
             </div>
-            <div class="article-content__item">
-                <img src="./images/image5.jpg" alt="">
-                <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+        </section>
+        <section class="article-module component">
+            <div class="article-tab">
+                <div class="article-tab__item" onclick="openTab('article-coming')">
+                    Đang Diễn Ra
+                    <div class="article-tab__border"></div>
+                </div>
+                <div class="article-tab__item" onclick="openTab('article-coming-soon')">
+                    Sắp Diễn Ra
+                    <div class="article-tab__border"></div>
+                </div>
             </div>
-            <!-- <div class="article-content__item">
+            <div class="article-content">
+                <div id="article-coming" class="article-content__list">
+                    <div class="article-content__item">
+                        <img src="./images/image1.jpg" alt="">
+                        <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+                    </div>
+                    <div class="article-content__item">
+                        <img src="./images/image2.jpg" alt="">
+                        <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+                    </div>
+                    <div class="article-content__item">
+                        <img src="./images/image6.jpg" alt="">
+                        <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+                    </div>
+                    <div class="article-content__item">
+                        <img src="./images/image5.jpg" alt="">
+                        <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+                    </div>
+                    <!-- <div class="article-content__item">
                 <img src="./images/image4.jpg" alt="">
                 <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
             </div> -->
-        </div>
-        <div id="article-coming-soon" class="article-content__list" style="display: none;">
-            <div class="article-content__item">
-                <img src="./images/image4.jpg" alt="">
-                <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
-            </div>
-            <div class="article-content__item">
-                <img src="./images/image2.jpg" alt="">
-                <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
-            </div>
-            <div class="article-content__item">
-                <img src="./images/image6.jpg" alt="">
-                <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
-            </div>
-            <div class="article-content__item">
-                <img src="./images/image5.jpg" alt="">
-                <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
-            </div>
-            <!-- <div class="article-content__item">
+                </div>
+                <div id="article-coming-soon" class="article-content__list" style="display: none;">
+                    <div class="article-content__item">
+                        <img src="./images/image4.jpg" alt="">
+                        <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+                    </div>
+                    <div class="article-content__item">
+                        <img src="./images/image2.jpg" alt="">
+                        <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+                    </div>
+                    <div class="article-content__item">
+                        <img src="./images/image6.jpg" alt="">
+                        <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+                    </div>
+                    <div class="article-content__item">
+                        <img src="./images/image5.jpg" alt="">
+                        <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
+                    </div>
+                    <!-- <div class="article-content__item">
                 <img src="./images/image4.jpg" alt="">
                 <a class="article-btn" href="article-detail.html" target="_blank">Chi tiết</a>
             </div> -->
-        </div>
-      </div>
-    </section>
-  </div>
-  <footer class="footer-container">
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer-container">
         <div class="footer-logo">
             <img src="./images/logo.png" alt="">
         </div>
@@ -104,7 +118,8 @@
                     <div class="footer-info__title-border" style="margin-left: 20px;"></div>
                 </div>
                 <div class="footer-info__content">
-                    <a href="https://www.facebook.com/FPTU.HCM/" target="_blank" class="footer-info__fanpage">Fanpage</a>
+                    <a href="https://www.facebook.com/FPTU.HCM/" target="_blank"
+                        class="footer-info__fanpage">Fanpage</a>
                     <p style="margin-top: 21px;margin-bottom: 7px;;">TRƯỜNG ĐẠI HỌC FPT</p>
                     <span class="footer-info__address">Lô E2a-7, Đường D1, Khu Công nghệ cao,
                         P.Long Thạnh Mỹ, Tp. Thủ Đức, TP.HCM.</span>
@@ -141,7 +156,8 @@
                     </ul>
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/FPTBasketballClub/" target="_blank">FPTU Basketball Club</a>
+                            <a href="https://www.facebook.com/FPTBasketballClub/" target="_blank">FPTU Basketball
+                                Club</a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/FFC.FPTUHCM" target="_blank">FPT FootBall Club</a>
@@ -181,9 +197,9 @@
                 </div>
             </div>
         </div>
-  </footer>
-  <script type="text/javascript" src="./js/jquery.min.js"></script>
-  <script src="./js/script.js"></script>
+    </footer>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

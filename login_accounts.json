@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "Châu Anh Quốc",
+        "avatar" : "./images/default-avatar.png",
+        "email":"quoccase130126@fpt.edu.vn",
+        "password": "e10adc3949ba59abbe56e057f20f883e"
+    },
+    {
+        "name" : "User2",
+        "avatar" : "./images/default-avatar.png",
+        "email":"user2@fpt.edu.vn",
+        "password": "c4ca4238a0b923820dcc509a6f75849b"
+    }
+]

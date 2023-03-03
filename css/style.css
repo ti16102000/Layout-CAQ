@@ -1,5 +1,4 @@
 body{
-    font-family: Inter;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/background.jpg);
@@ -29,6 +28,7 @@ body{
     right: 0;
     top: 24px;
     margin-right: 27px;
+    z-index: 5;
 }
 .header-login > .btn-login{
     background: #FB983E;
@@ -45,6 +45,50 @@ body{
     align-items: center;
     text-decoration: none;
 }
+
+/*user login*/
+.userLogin-container{
+    display: none;
+    
+    cursor: pointer;
+}
+.userLogin-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar-user{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name-user{
+    font-weight: 800;
+    font-size: var(--font-size-tieu-chuan);
+    color: var(--mau-cam-chu-dao);
+}
+/*user login*/
+
+/*Menu user*/
+.menu-user{
+    display: none;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.menu-user ul > li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--mau-cam-chu-dao);
+    font-weight: 500;
+}
+.userLogin-container:hover .menu-user{
+    display: block!important;
+}
+/*Menu user*/
+
 /*header*/
 
 /*Hero carousel*/
@@ -212,6 +256,7 @@ body{
 .footer-info-social > .footer-info__content{
     display: flex;
     margin-top: 22px;
+    justify-content: center;
 }
 .footer-info__social-item{
     margin-right: 11px;
