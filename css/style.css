@@ -113,11 +113,11 @@ body{
     display: flex;
     width:300%;
     position:relative;
-    -webkit-animation:slide 12s ease-in-out infinite;
-    -moz-animation:slide 12s ease-in-out infinite;
-    -ms-animation:slide 12s ease-in-out infinite;
-    -o-animation:slide 12s ease-in-out infinite;
-    animation:slide 12s ease-in-out infinite;
+    -webkit-animation:slide 8s ease-in-out 3s infinite;
+    -moz-animation:slide 8s ease-in-out 3s infinite;
+    -ms-animation:slide 8s ease-in-out 3s infinite;
+    -o-animation:slide 8s ease-in-out 3s infinite;
+    animation:slide 8s ease-in-out 3s infinite;
 }
 /* .hero-carousel__container:hover {
     animation-play-state:paused;
@@ -134,32 +134,32 @@ body{
 }
 @-webkit-keyframes slide {
     0% {left:0;}
-    35% {left:-100%;}
-    75% {left:-200%;}
+    40% {left:-100%;}
+    70% {left:-200%;}
     100% {left:0;}
 }
 @-moz-keyframes slide {
     0% {left:0;}
-    35% {left:-100%;}
-    75% {left:-200%;}
+    40% {left:-100%;}
+    70% {left:-200%;}
     100% {left:0;}
 }
 @-ms-keyframes slide {
     0% {left:0;}
-    35% {left:-100%;}
-    75% {left:-200%;}
+    40% {left:-100%;}
+    70% {left:-200%;}
     100% {left:0;}
 }
 @-o-keyframes slide {
     0% {left:0;}
-    35% {left:-100%;}
-    75% {left:-200%;}
+    40% {left:-100%;}
+    70% {left:-200%;}
     100% {left:0;}
 }
 @keyframes slide {
     0% {left:0;}
-    35% {left:-100%;}
-    75% {left:-200%;}
+    40% {left:-100%;}
+    70% {left:-200%;}
     100% {left:0;}
 }
 /*Hero carousel*/
