@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đăng Ký - FPT University</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/register.css" />
+</head>
+
+<body>
+    <form id="form-register">
+        <div class="register-left">
+            <img src="./images/logo2.png" alt="">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Họ và Tên...">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Mã Số Sinh Viên...">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Số Điện Thoại...">
+            </div>
+        </div>
+        <div class="register-right">
+            <div class="register-right__top">
+                <div class="form-group" style="padding-top: 165px;">
+                    <select name="" id="" class="form-control">
+                        <option value="">CLB đang tham gia...</option>
+                        <option value="">Cóc Sài Gòn</option>
+                        <option value="">FStyle Crew</option>
+                        <option value="">FPT Alumni Club</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email...">
+                </div>
+                <span class="success-msg">Đăng ký thành công!</span>
+            </div>
+            <div class="register-right__bottom">
+                <input type="submit" class="btn-regis" value="Đăng Ký">
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#form-register").submit(function (e) {
+                e.preventDefault();
+                $("#form-register").find(".form-control").val("");
+                $(".success-msg").show()
+            })
+        })
+    </script>
+</body>
+
+</html>
