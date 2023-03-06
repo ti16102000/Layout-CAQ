@@ -5,7 +5,7 @@ $(function(){
         var hasErrorRequiredField = false;
         $("#form-login input[data-required]").each(function(){
             var ele = $(this);
-             //show error message on the required field if the value of it is empty.
+             //show error message on the required field if its value is empty.
             if(ele.val()==""){
                 ele.parent().find(".required-field").addClass("show-error-msg");
                 hasErrorRequiredField = true;
