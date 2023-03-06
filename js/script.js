@@ -5,41 +5,27 @@ $(function () {
 })
 
 function checkUserLogin(){
-    var userLogin = localStorage.getItem('nameUser');
+    //get info of user login
+    var userLogin = localStorage.getItem('nameUser'); //get data of name
     if (userLogin != null) {
-        var avtPath = localStorage.getItem('avatarUser');
-        $(".btn-login").hide();
-        $(".userLogin-container").css("display", "block");
-        var nameUser = userLogin.split(" ").slice(-1)[0];
-        $(".userLogin-container .avatar-user").attr("src",avtPath);
-        $(".userLogin-container .name-user").text(nameUser);
+        var avtPath = localStorage.getItem('avatarUser');//get image path of avatar
+        $(".btn-login").hide();//hide login button
+        $(".userLogin-container").css("display", "block");//show html of user login
+        var nameUser = userLogin.split(" ").slice(-1)[0];//get last name of name
+        $(".userLogin-container .avatar-user").attr("src",avtPath);//set path image into img tag of user login
+        $(".userLogin-container .name-user").text(nameUser);//set name into span tag of user login
     }
 }
-
+//function of logout button in header
 function logoutUser(){
+    //remove localStorage of user login
     localStorage.removeItem("nameUser");
     localStorage.removeItem("avatarUser");
+    //reload current page
     location.reload();
 }
 
-//slide hero carousel
-let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//     let i;
-//     let slides = document.getElementsByClassName("carousel__item");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {
-//         slideIndex = 1
-//     }
-//     slides[slideIndex - 1].style.display = "block";
-//     setTimeout(showSlides, 3000); // Change image every 3 seconds
-// }
-//articles tab
+//function of show/hide tabs
 function openTab(idTab) {
     var i;
     var x = document.getElementsByClassName("article-content__list");
